@@ -1,0 +1,26 @@
+服务器端口8090
+轮播图api  get请求   /api/sliders
+成功获取返回
+[
+    "http://gw.alicdn.com/tfs/TB1XPJLi9_I8KJjy0FoXXaFnVXa-1280-520.jpg_720x720Q30.jpg",
+    "http://gw.alicdn.com/tfs/TB1Q6zOh8TH8KJjy0FiXXcRsXXa-1280-520.jpg_720x720Q30.jpg",
+    "http://gw.alicdn.com/tfs/TB1wKcuiLDH8KJjy1XcXXcpdXXa-1280-520.jpg_720x720Q30.jpg",
+    "http://gw.alicdn.com/tfs/TB1McNdiBTH8KJjy0FiXXcRsXXa-1280-520.jpg_720x720Q30.jpg",
+    "http://gw.alicdn.com/tfs/TB1UUGqib_I8KJjy1XaXXbsxpXa-1280-520.jpg_720x720Q30.jpg"
+]
+电影列表api get请求  /api/movieList   参数offset（其实位置）、limit（获取个数）
+以一条数据为例
+{
+    "hasMore":true,
+    "list":[
+        {
+            "id":0,"img":"https://gw.alicdn.com/i3/TB12V0Iiv6H8KJjSspmXXb2WXXa_.jpg_160x160Q75.jpg",
+            "video":"http://vodcdn.video.taobao.com/oss/taobao-ugc/190d24aad9cc494ea17f3d4bda8c8502/1505302783/video.mp4",
+            "title":"芳华",
+            "is3D":false,
+            "grade":"8.9",
+            "director":"导演：冯小刚",
+            "starring":"主演：黄轩 苗苗 钟楚曦 杨采钰"
+        }
+    ]
+}
