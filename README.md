@@ -7,6 +7,7 @@
 + 创建server文件夹
 ，里边放后台的文件
 + 创建api，components文件夹（公用组件），containers文件夹（子路由），store文件夹（仓库），style文件夹（公共样式），images文件夹（项目使用的图片数据）
++ utils中放的是上拉加载，下拉刷新的方法
 
 ##技术栈
 + 基本框架：React，node.js
@@ -23,6 +24,8 @@
 
 ##components（公用组件）
 + Tab组件设置路由在页面上有几个link节点，也就是有页面下边有几个按钮
++ 
++ 
 
 ##containers（页面级组件）
 + Home是首页
@@ -31,5 +34,7 @@
 + CinemaDetail是影院详情
 + FilmDetail是电影详情
 + sell是售票选做
++ Search是电影搜索
++ City是城市搜错
 
 ##store（仓库）

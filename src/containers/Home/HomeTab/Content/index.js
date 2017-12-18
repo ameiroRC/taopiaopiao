@@ -7,9 +7,9 @@ export default class Content extends Component {
 
     render() {
         return (
-            <span className={this.props.contentClass(this.props.index)}>
+            <div className={this.props.contentClass(this.props.index)}>
                 {this.props.item}
-            </span>
+            </div>
         )
     }
 }
