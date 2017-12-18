@@ -4,7 +4,7 @@ import List from './List'
 import Content from "./Content/index";
 import Hot from "../Hot/index";
 import Will from "../Will/index";
-import Rander from "../Rander/index";
+import Rank from "../Rank/index";
 
 export default class HomeTab extends Component {
     constructor() {
@@ -14,7 +14,7 @@ export default class HomeTab extends Component {
             content: [
                 {item: <Hot/>},
                 {item: <Will/>},
-                {item: <Rander/>},
+                {item: <Rank/>},
             ],
             current: 0
         }

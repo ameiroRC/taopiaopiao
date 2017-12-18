@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class Rander extends Component {
+export default class Rank extends Component {
     render() {
         return (
             <div>
