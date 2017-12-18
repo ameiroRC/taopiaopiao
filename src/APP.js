@@ -14,7 +14,7 @@ import City from './containers/City';//城市变更页面
 import Hot from './containers/Home/Hot';//热映页面
 import Will from './containers/Home/Will';//即将上映页面
 import Rank from './containers/Home/Rank';//排行榜页面
-
+import Login from "./containers/Login/index";
 
 export default class APP extends Component {
   render() {
@@ -24,6 +24,7 @@ export default class APP extends Component {
           <Route exact path={'/'} component={Home}/>
           <Route path={'/cinema'} component={Cinema}/>
           <Route path={'/mine'} component={Mine}/>
+          <Route path={'/login'} component={Login}/>
           <Route path={'/cinemaDetail'} component={CinemaDetail}/>
           <Route path={'/filmDetail'} component={FilmDetail}/>
           <Route path={'/sell'} component={Sell}/>
