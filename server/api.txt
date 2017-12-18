@@ -9,7 +9,11 @@
     "http://gw.alicdn.com/tfs/TB1UUGqib_I8KJjy1XaXXbsxpXa-1280-520.jpg_720x720Q30.jpg"
 ]
 电影列表api get请求  /api/movieList   参数offset（其实位置）、limit（获取个数）
-以一条数据为例
+
+注 ：各界面影片id对应首页所有影片id，为到时获取影片详情信息使用，所以其余界面的id是无序的，目的只为对应首页电影列表id
+（首页列表数据日后可能会变动，还需加入一部分详情页所需内容，但获取方式不会改变，不会影响首页内容显示）
+
+成功返回->以一条数据为例
 {
     "hasMore":true,
     "list":[
@@ -24,3 +28,47 @@
         }
     ]
 }
+排行榜 get请求  /api/rankList
+成功返回
+[
+    {
+        "title" : "今日票房榜",
+        "movies" : [
+            {
+                "id" : 0,
+                "name" : "芳华",
+                "img" : "https://gw.alicdn.com/i3/TB12V0Iiv6H8KJjSspmXXb2WXXa_.jpg_160x160Q75.jpg",
+                "type" : "819.52万"
+
+
+            },
+            ...
+        ]
+    },
+    {
+        "title" : "口碑榜",
+        "movies" : [
+            {
+                "id" : 1,
+                "name" : "寻梦环游记",
+                "img" : "https://gw.alicdn.com/i2/TB1xsowaG_85uJjSZFlXXXemXXa_.jpg_160x160Q75.jpg",
+                "type" : "9.5"
+
+            },
+            ...
+        ]
+    },
+    {
+        "title" : "最受期待榜",
+        "movies" : [
+            {
+                "id" : 6,
+                "name" : "心理罪之城市之光",
+                "img" : "https://gw.alicdn.com/i1/TB1yrlffJzJ8KJjSspkXXbF7VXa_.jpg_160x160Q75.jpg",
+                "type" : "12月22日上映"
+
+            },
+            ...
+        ]
+    }
+]

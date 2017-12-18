@@ -19,10 +19,12 @@ app.use(function(req,res,next){
         next();
     }
 });
+//获取首页轮播图
 let sliders = require('./mock/sliders');
 app.get('/api/sliders', function (req, res) {
     res.json(sliders);
 });
+//获取首页轮播图列表
 let movieList = require('./mock/movieList');
 app.get('/api/movieList', function(req, res){
     //offset从哪请求，limit请求几条
@@ -38,4 +40,9 @@ app.get('/api/movieList', function(req, res){
     newMovies.list = newMovies.list.slice(offset, offset + limit);
 
     res.json(newMovies);
+});
+//获取排行榜数据
+let rankList = require('./mock/rankList');
+app.get('/api/rankList', function (req, res) {
+    res.json(rankList);
 });
