@@ -4,8 +4,7 @@
 + 下载相应安装包，创建webpack.config.js文件，书写webpack打包规则（没有用脚手架）
 + 创建index.html文件，作为页面主主体，需要进行移动适配，引进图标，设置根元素
 + 创建src文件，里面创建index.js文件，作为文件入口
-+ 创建server文件夹
-，里边放后台的文件
++ 创建server文件夹，里边放后台的文件
 + 创建api，components文件夹（公用组件），containers文件夹（子路由），store文件夹（仓库），style文件夹（公共样式），images文件夹（项目使用的图片数据）
 
 ##技术栈

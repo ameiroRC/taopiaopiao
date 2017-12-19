@@ -21,12 +21,11 @@ export default class APP extends Component {
     return (
       <Router>
         <div>
-          <Route exact path={'/'} component={Home}/>
           <Route path={'/cinema'} component={Cinema}/>
           <Route path={'/mine'} component={Mine}/>
           <Route path={'/cinemaDetail'} component={CinemaDetail}/>
           <Route path={'/filmDetail'} component={FilmDetail}/>
-          <Route path={'/sell'} component={Sell}/>
+          <Route exact path={'/'} component={Sell}/>
           <Route path={'/search'} component={Search}/>
           <Route path={'/city'} component={City}/>
           <Route path={'/home/hot'} component={Hot}/>
