@@ -20,7 +20,7 @@ export default function downFresh(dom, callback) {//下拉刷新
       dom.removeEventListener('touchmove', touchMove);
       dom.removeEventListener('touchend', touchEnd);
     }
- 
+
     function touchMove(e) {
       let pageY = event.touches[0].pageY;
       if (pageY > startY) {//如果点击的坐标大于原坐标
