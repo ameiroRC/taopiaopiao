@@ -30,8 +30,8 @@ export default class HomeTab extends Component {
 
   render() {
     return (
-      <div>
-        <ul id={'tab'}>
+      <div className={'homeTab'}>
+        <ul id={'list'}>
           {
             this.state.title.map((item, index) => (
               <List

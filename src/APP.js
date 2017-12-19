@@ -24,11 +24,11 @@ export default class APP extends Component {
           <Route exact path={'/'} component={Home}/>
           <Route path={'/cinema'} component={Cinema}/>
           <Route path={'/mine'} component={Mine}/>
-          <Route path={'/cinemaDetail'} component={CinemaDetail}/>
+          {/*<Route path={'/cinemaDetail'} component={CinemaDetail}/>
           <Route path={'/filmDetail'} component={FilmDetail}/>
           <Route path={'/sell'} component={Sell}/>
           <Route path={'/search'} component={Search}/>
-          <Route path={'/city'} component={City}/>
+          <Route path={'/city'} component={City}/>*/}
           <Route path={'/home/hot'} component={Hot}/>
           <Route path={'/home/will'} component={Will}/>
           <Route path={'/home/Rank'} component={Rank}/>

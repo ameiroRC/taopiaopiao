@@ -1,0 +1,21 @@
+.hot-sliders{
+  position: relative;
+  .dots{
+    position: absolute;
+    bottom:7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius: 50%;
+      background-color: #FFF;
+      margin-left:5px;
+      &.active{
+        background-color: lightskyblue;
+      }
+    }
+  }
+}

@@ -20,17 +20,27 @@ export default class HotSlider extends Component {
     let swipe = (
       <ReactSwipe swipeOptions={swipeOptions}>
         {
-          this.props.sliders.map((item,index)=>{
-
-          })
+          this.props.sliders.length > 0 ? this.props.sliders.map((item, index) => (
+            <div key={index}>
+              <img src={item}/>
+            </div>
+          )) : null
         }
       </ReactSwipe>
     );
 
     return (
-      <div>
-
+      <div className='hot-sliders'>
+        {swipe}
+        <div className="dots">
+          {
+            this.props.sliders.map((item, index) => (
+              <span key={index} className={"dot " + (this.state.index == index ? "active" : "")}/>
+            ))
+          }
+        </div>
       </div>
+
     )
   }
 }

@@ -5,7 +5,7 @@ import './index.less'
 export default class Tab extends Component {
   render() {
     return (
-      <div>
+      <div className={'tab'}>
         <nav>
           <NavLink exact to={'/'}>
             <i className={'iconfont icon-dianying'}/>

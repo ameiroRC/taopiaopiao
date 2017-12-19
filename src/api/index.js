@@ -1,6 +1,6 @@
-const HOST = 'http://localhost:3000';
+const HOST = 'http://localhost:8090';
 
-function get(url) {
+export function get(url) {
   return fetch(HOST + url, {
     method: "GET",
     credentials: 'include',
@@ -10,7 +10,7 @@ function get(url) {
   }).then(res => res.json())
 }
 
-function post(url, data) {
+export function post(url, data) {
   return fetch(HOST + url, {
     method: "POST",
     credentials: "include",//向服务器发送请求的时候需要带上cookie
