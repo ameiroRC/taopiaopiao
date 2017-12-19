@@ -8,6 +8,7 @@ module.exports = [
             "isShow" : true,
             "grade" : 8.9,
             "like" : 0,
+            "todayPrice" : 3254.77,
             "releaseTime" : "已上映",
             "director" : "导演：冯小刚",
             "starring" : "主演：黄轩 苗苗 钟楚曦 杨采钰",
@@ -23,6 +24,7 @@ module.exports = [
             "isShow" : true,
             "grade" : 9.5,
             "like" : 0,
+            "todayPrice" : 398.50,
             "releaseTime" : "已上映",
             "director" : "导演：李·昂克里奇",
             "starring" : "主演：安东尼·冈萨雷兹"
@@ -36,6 +38,7 @@ module.exports = [
             "isShow" : true,
             "grade" : 7.7,
             "like" : 0,
+            "todayPrice" : 638.84,
             "releaseTime" : "已上映",
             "director" : "导演：袁和平",
             "starring" : "主演：大鹏 倪妮 李治廷 周冬雨"
@@ -47,6 +50,7 @@ module.exports = [
             "title" : "机器之血",
             "is3D" : true,
             "isShow" : false,
+            "todayPrice" : 0,
             "grade" : 0,
             "like" : 197101,
             "releaseTime" : "12月22日上映",
@@ -62,6 +66,7 @@ module.exports = [
             "isShow" : true,
             "grade": 9.1,
             "like" : 0,
+            "todayPrice" : 135.61,
             "releaseTime" : "已上映",
             "director": "导演：保罗·金",
             "starring": "主演：本·威士肖 杜江"
@@ -75,6 +80,7 @@ module.exports = [
             "isShow" : true,
             "grade": 9.0,
             "like" : 0,
+            "todayPrice" : 86.43,
             "releaseTime" : "已上映",
             "director": "导演：多洛塔·科别拉",
             "starring": "主演：道格拉斯·布斯 赵天宇"
@@ -88,6 +94,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 333061,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director": "导演：徐纪周",
             "starring": "主演：邓超 阮经天 刘诗诗"
@@ -101,6 +108,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 306661,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director": "导演：陈凯歌",
             "starring": "主演：黄轩 染谷将太 张雨绮"
@@ -114,6 +122,7 @@ module.exports = [
             "isShow" : true,
             "grade": 9.0,
             "like" : 0,
+            "todayPrice" : 14.80,
             "releaseTime" : "已上映",
             "director": "导演：乔·赖特",
             "starring": "主演：加里·奥德曼 莉莉·詹姆斯"
@@ -127,6 +136,7 @@ module.exports = [
             "isShow" : true,
             "grade": 8.3,
             "like" : 0,
+            "todayPrice" : 14.08,
             "releaseTime" : "已上映",
             "director": "导演：阿兰·夏巴",
             "starring": "主演：奥黛丽·塔图"
@@ -140,6 +150,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 153347,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：肖洋",
             "starring": "主演：冯绍峰 刘亦菲 李光洁"
@@ -153,6 +164,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 137580,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：吴君如",
             "starring": "主演：吴君如 沈腾 岳云鹏 张译"
@@ -166,6 +178,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 111012,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director": "导演：彭顺",
             "starring": "主演：陈学冬 张孝全 桂纶镁"
@@ -179,6 +192,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 101234,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：约翰内斯·罗伯茨",
             "starring": "主演：曼迪·摩尔 克莱尔·霍尔特"
@@ -192,6 +206,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 204746,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：韩杰",
             "starring": "主演：王俊凯 迪丽热巴 董子健"
@@ -205,6 +220,7 @@ module.exports = [
             "isShow" : true,
             "grade": 8.6,
             "like" : 0,
+            "todayPrice" : 51.17,
             "releaseTime" : "已上映",
             "director": "导演：赵汉唐",
             "starring": "主演：江一燕 赵汉唐"
@@ -218,6 +234,7 @@ module.exports = [
             "isShow" : true,
             "grade": 6.4,
             "like" : 0,
+            "todayPrice" : 22.14,
             "releaseTime" : "已上映",
             "director": "导演：张耀光",
             "starring": "主演：张乃歌 赵今夏"
@@ -231,6 +248,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 100231,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director": "导演：约瑟夫·科辛斯基",
             "starring": "主演：乔什·布洛林 迈尔斯·特勒"
@@ -244,6 +262,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 138921,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：田羽生",
             "starring": "主演：韩庚 郑恺 于文文 曾梦雪"
@@ -257,6 +276,7 @@ module.exports = [
             "isShow" : true,
             "grade" : 6.5,
             "like" : 0,
+            "todayPrice" : 9.09,
             "releaseTime" : "已上映",
             "director" : "导演：冯小刚",
             "starring" : "主演：黄轩 苗苗 钟楚曦 杨采钰",
@@ -272,6 +292,7 @@ module.exports = [
             "isShow" : true,
             "grade" : 7.1,
             "like" : 0,
+            "todayPrice" : 4.38,
             "releaseTime" : "已上映",
             "director" : "导演：李·昂克里奇",
             "starring" : "主演：安东尼·冈萨雷兹"
@@ -285,6 +306,7 @@ module.exports = [
             "isShow" : true,
             "grade" : 5.3,
             "like" : 0,
+            "todayPrice" : 1.26,
             "releaseTime" : "已上映",
             "director" : "导演：袁和平",
             "starring" : "主演：大鹏 倪妮 李治廷 周冬雨"
@@ -298,6 +320,7 @@ module.exports = [
             "isShow" : false,
             "grade" : 0,
             "like" : 97101,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director" : "导演：张立嘉",
             "starring" : "主演：成龙 罗志祥 欧阳娜娜"
@@ -311,6 +334,7 @@ module.exports = [
             "isShow" : true,
             "grade": 6.0,
             "like" : 0,
+            "todayPrice" : 8.01,
             "releaseTime" : "已上映",
             "director": "导演：保罗·金",
             "starring": "主演：本·威士肖 杜江"
@@ -324,6 +348,7 @@ module.exports = [
             "isShow" : true,
             "grade": 7.2,
             "like" : 0,
+            "todayPrice" : 9.10,
             "releaseTime" : "已上映",
             "director": "导演：多洛塔·科别拉",
             "starring": "主演：道格拉斯·布斯 赵天宇"
@@ -337,6 +362,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 33061,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director": "导演：徐纪周",
             "starring": "主演：邓超 阮经天 刘诗诗"
@@ -350,6 +376,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 96661,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director": "导演：陈凯歌",
             "starring": "主演：黄轩 染谷将太 张雨绮"
@@ -363,6 +390,7 @@ module.exports = [
             "isShow" : true,
             "grade": 7.8,
             "like" : 0,
+            "todayPrice" : 3.30,
             "releaseTime" : "已上映",
             "director": "导演：乔·赖特",
             "starring": "主演：加里·奥德曼 莉莉·詹姆斯"
@@ -376,6 +404,7 @@ module.exports = [
             "isShow" : true,
             "grade": 6.7,
             "like" : 0,
+            "todayPrice" : 6.18,
             "releaseTime" : "已上映",
             "director": "导演：阿兰·夏巴",
             "starring": "主演：奥黛丽·塔图"
@@ -389,6 +418,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 53347,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：肖洋",
             "starring": "主演：冯绍峰 刘亦菲 李光洁"
@@ -402,6 +432,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 37580,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：吴君如",
             "starring": "主演：吴君如 沈腾 岳云鹏 张译"
@@ -415,6 +446,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 11012,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director": "导演：彭顺",
             "starring": "主演：陈学冬 张孝全 桂纶镁"
@@ -428,6 +460,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 41234,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：约翰内斯·罗伯茨",
             "starring": "主演：曼迪·摩尔 克莱尔·霍尔特"
@@ -441,6 +474,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 34746,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：韩杰",
             "starring": "主演：王俊凯 迪丽热巴 董子健"
@@ -454,6 +488,7 @@ module.exports = [
             "isShow" : true,
             "grade": 6.4,
             "like" : 0,
+            "todayPrice" : 2.43,
             "releaseTime" : "已上映",
             "director": "导演：赵汉唐",
             "starring": "主演：江一燕 赵汉唐"
@@ -467,6 +502,7 @@ module.exports = [
             "isShow" : true,
             "grade": 4.5,
             "like" : 0,
+            "todayPrice" : 5.31,
             "releaseTime" : "已上映",
             "director": "导演：张耀光",
             "starring": "主演：张乃歌 赵今夏"
@@ -480,6 +516,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 10231,
+            "todayPrice" : 0,
             "releaseTime" : "12月22日上映",
             "director": "导演：约瑟夫·科辛斯基",
             "starring": "主演：乔什·布洛林 迈尔斯·特勒"
@@ -493,6 +530,7 @@ module.exports = [
             "isShow" : false,
             "grade": 0,
             "like" : 38921,
+            "todayPrice" : 0,
             "releaseTime" : "12月29日上映",
             "director": "导演：田羽生",
             "starring": "主演：韩庚 郑恺 于文文 曾梦雪"

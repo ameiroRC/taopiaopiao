@@ -22,6 +22,7 @@
     isShow -> 是否上映
     grade -> 评分  未上映电影值为0
     like -> 想看人数 上映中电影值为0
+    todayPrice -> 今日票房 未上映值为0
 
 
     注 ：各界面影片id对应首页所有影片id，为到时获取影片详情信息使用，所以其余界面的id是无序的，目的只为对应首页电影列表id
@@ -39,6 +40,7 @@
                 "isShow":true,
                 "grade":8.9,
                 "like":0,
+                "todayPrice" : 3254.77,
                 "releaseTime":"已上映",
                 "director":"导演：冯小刚",
                 "starring":"主演：黄轩 苗苗 钟楚曦 杨采钰"},
@@ -57,6 +59,7 @@
                 "isShow":false,
                 "grade":0,
                 "like":197101,
+                "todayPrice" : 0,
                 "releaseTime":"12月22日上映",
                 "director":"导演：张立嘉",
                 "starring":"主演：成龙 罗志祥 欧阳娜娜"

@@ -56,8 +56,8 @@ app.get('/api/movieList', function(req, res){
         res.json(newMovies);
         return;
     }else{
-        let movies = movieList.list;
-        res.json(movies);
+
+        res.json(movieList);
     }
 
 });
