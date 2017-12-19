@@ -150,6 +150,46 @@ module.exports = {
             "grade": "7.3",
             "director": "导演：韩杰",
             "starring": "主演：王俊凯 迪丽热巴 董子健"
+        },
+        {
+            "id": 15,
+            "img": "https://gw.alicdn.com/i3/TB1BK07Xie68eJjSZFBXXbJIpXa_.jpg_160x160Q75.jpg",
+            "video": "http://vodcdn.video.taobao.com/oss/taobao-ugc/0ddcfdfd17cf45018464feec49ecbf16/1508986515/video.mp4",
+            "title": "七十七天",
+            "is3D": false,
+            "grade": "8.6",
+            "director": "导演：赵汉唐",
+            "starring": "主演：江一燕 赵汉唐"
+        },
+        {
+            "id": 16,
+            "img": "https://gw.alicdn.com/i2/TB1ilWqbQfb_uJkHFCcXXXagFXa_.jpg_160x160Q75.jpg",
+            "video": "http://vodcdn.video.taobao.com/oss/taobao-ugc/7d44c6f6b4e44926826dacaa7d1d2b02/1513226621/video.mp4",
+            "title": "悔恨",
+            "is3D": false,
+            "grade": "6.4",
+            "director": "导演：张耀光",
+            "starring": "主演：张乃歌 赵今夏"
+        },
+        {
+            "id": 17,
+            "img": "https://gw.alicdn.com/i3/TB1gD5af26H8KJjy0FjXXaXepXa_.jpg_160x160Q75.jpg",
+            "video": "http://vodcdn.video.taobao.com/oss/taobao-ugc/36b497e7b03044759e2db8b2d8423108/1511923625/video.mp4",
+            "title": "勇往直前",
+            "is3D": false,
+            "grade": "8.8",
+            "director": "导演：约瑟夫·科辛斯基",
+            "starring": "主演：乔什·布洛林 迈尔斯·特勒"
+        },
+        {
+            "id": 18,
+            "img": "https://gw.alicdn.com/i3/TB1gD5af26H8KJjy0FjXXaXepXa_.jpg_160x160Q75.jpg",
+            "video": "http://vodcdn.video.taobao.com/oss/taobao-ugc/d3a7fc375e694735a749909ab62a77f2/1512436504/video.mp4",
+            "title": "前任3：再见前任",
+            "is3D": false,
+            "grade": "8.8",
+            "director": "导演：田羽生",
+            "starring": "主演：韩庚 郑恺 于文文 曾梦雪"
         }
 
     ]
