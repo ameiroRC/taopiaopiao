@@ -83,7 +83,7 @@ module.exports = [
             {
                 "id" : 8,
                 "name" : "至暗时刻",
-                "img" : "http://vodcdn.video.taobao.com/oss/taobao-ugc/ac9252d2d5484b398e9f86ea0e1e7db8/1511752285/video.mp4",
+                "img" : "https://gw.alicdn.com/i1/TB1.dS0bCYH8KJjSspdXXcRgVXa_.jpg_160x160Q75.jpg",
                 "type" : "9.0"
 
             },

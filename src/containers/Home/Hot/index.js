@@ -3,25 +3,23 @@ import './index.less'
 import HotSlider from "./HotSlider/index";
 import {connect} from 'react-redux';
 import actions from '../../../store/actions/home-hot';
+import HotMovie from "./HotMovie/index";
 
 
 class Hot extends Component {
   componentDidMount() {
     this.props.fetchSliders();
+    this.props.fetchHotMovie();
   }
 
   render() {
     console.log(this.props);
-    if (this.props.sliders.list){
-      return (
-        <div className={'hot'}>
-          <HotSlider sliders={this.props.sliders.list}/>
-        </div>
-      )
-    }else {
-      return null
-    }
-
+    return (
+      <div className={'hot'}>
+        <HotSlider sliders={this.props.sliders.list}/>
+        <HotMovie hotMovies={this.props.hotMovies.list}/>
+      </div>
+    )
   }
 }
 

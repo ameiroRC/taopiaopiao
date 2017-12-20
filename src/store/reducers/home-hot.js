@@ -5,6 +5,10 @@ let initState = {
   sliders: {
     list: []
   },
+  hotMovies: {
+    hasMore: false,
+    list: []
+  }
 };
 
 export default function (state = initState, action) {
@@ -15,6 +19,14 @@ export default function (state = initState, action) {
         sliders: {
           list: action.payload
         }
+      };
+    case types.FETCH_HOTMOVIE:
+      return {
+        ...state,
+        hotMovies: {
+          list: action.payload
+        }
+
       };
     default:
       return state
