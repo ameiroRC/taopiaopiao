@@ -67,3 +67,22 @@
                 ]
     }
 
+
+想看按钮api get /api/like  参数id
+    第一次点击想看数量加1 第二次减一
+    返回{
+            "id":0,"img":"https://gw.alicdn.com/i3/TB12V0Iiv6H8KJjSspmXXb2WXXa_.jpg_160x160Q75.jpg",
+            "video":"http://vodcdn.video.taobao.com/oss/taobao-ugc/190d24aad9cc494ea17f3d4bda8c8502/1505302783/video.mp4",
+            "title":"芳华",
+            "is3D":false,
+            "isShow":true,
+            "grade":8.9,
+            "like":0,
+            "todayPrice":3254.77,
+            "releaseTime":"已上映",
+            "director":"导演：冯小刚",
+            "starring":"主演：黄轩 苗苗 钟楚曦 杨采钰",
+            "isChange":false
+        }
+
+

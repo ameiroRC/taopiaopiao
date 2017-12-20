@@ -1,5 +1,6 @@
 let express = require('express');
 let bodyParse = require('body-parser');
+let fs = require('fs');
 let app = express();
 app.listen(8090);
 
@@ -61,6 +62,35 @@ app.get('/api/movieList', function(req, res){
     }
 
 });
+//修改想看数据
+app.get('/api/like', function (req, res) {
+    let {id} = req.query;
+    console.log(id);
+    fs.readFile('./mock/movieList.json', 'utf-8' ,(err, data)=>{
+
+        console.log(err, data);
+
+        if(err||data.length <= 0) {
+            res.send([]);
+        }else{
+            let movies = JSON.parse(data);
+            console.log(movies);
+            let movie = movies.find(item => item.id == id);
+            if(!movie.isChange){
+                movie.like = parseFloat(movie.like) + 1;
+                movie.isChange = true;
+            }else{
+                movie.like = parseFloat(movie.like) - 1;
+                movie.isChange = false;
+            }
+
+            fs.writeFile("./mock/movieList.json",JSON.stringify(movies), () => {
+                res.send(movie);
+            });
+        }
+    })
+});
+
 //获取排行榜数据
 let rankList = require('./mock/rankList');
 app.get('/api/rankList', function (req, res) {
