@@ -4,20 +4,26 @@ import HotSlider from "./HotSlider/index";
 import {connect} from 'react-redux';
 import actions from '../../../store/actions/home-hot';
 import HotMovie from "./HotMovie/index";
+import {upLoadMore, downFresh} from '../../../utils'
 
 
 class Hot extends Component {
   componentDidMount() {
     this.props.fetchSliders();
     this.props.fetchHotMovie();
+    downFresh(this.content, this.props.fetchSliders());
+    downFresh(this.content, this.props.fetchHotMovie());
   }
 
   render() {
     console.log(this.props);
     return (
       <div className={'hot'}>
-        <HotSlider sliders={this.props.sliders.list}/>
-        <HotMovie hotMovies={this.props.hotMovies.list}/>
+        <div ref={content => this.content = content} className={'hotContent'}>
+
+          <HotSlider sliders={this.props.sliders.list}/>
+          <HotMovie hotMovies={this.props.hotMovies.list}/>
+        </div>
       </div>
     )
   }

@@ -17,16 +17,14 @@ export default class HotSlider extends Component {
         this.setState({index});
       }
     };
-    let swipe = (
-      <ReactSwipe swipeOptions={swipeOptions}>
-        {
-          this.props.sliders.length > 0 ? this.props.sliders.map((item, index) => (
+    let swipe = (this.props.sliders.length > 0 ?
+        <ReactSwipe swipeOptions={swipeOptions}>
+          {this.props.sliders.map((item, index) => (
             <div key={index}>
               <img src={item}/>
             </div>
-          )) : null
-        }
-      </ReactSwipe>
+          ))}
+      </ReactSwipe>: null
     );
 
     return (
