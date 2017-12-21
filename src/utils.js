@@ -1,7 +1,7 @@
-export default function upLoadMore(dom, callback) {//上拉加载
-  let timer;//定义一个定时器
+export function upLoadMore(dom, callback) {//上拉加载
+    let timer;//定义一个定时器
   dom.addEventListener('scroll', function (e) {//监听滚轮事件
-    if (timer) clearTimeout(timer);
+      if (timer) clearTimeout(timer);
     timer = setTimeout(function () {
       let height = dom.clientHeight, scrollHeight = dom.scrollHeight, scrollTop = dom.scrollTop;
       if (height + scrollTop + 10 >= scrollHeight) callback();//如果一屏的高度+卷出的高度比总共内容的高度小10，那么执行回调函数
@@ -9,7 +9,7 @@ export default function upLoadMore(dom, callback) {//上拉加载
   })
 }
 //touches：这个属性是多点触碰时每个触碰点的集合，touches[0]可获取到第一个触碰点对象
-export default function downFresh(dom, callback) {//下拉刷新
+export function downFresh(dom, callback) {//下拉刷新
   let startY,//最开始的位置
     distance,//一共拉的距离
     originTop = dom.offsetTop;//记录最开始的top值

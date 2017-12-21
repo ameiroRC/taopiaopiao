@@ -17,7 +17,7 @@ export default class HomeTab extends Component {
   }
 
   handleClick = (index) => {
-    this.setState({current: index})
+      this.setState({current: index})
   };
 
   currentClass = (index) => {
@@ -29,7 +29,7 @@ export default class HomeTab extends Component {
   };
 
   render() {
-    return (
+      return (
       <div>
         <ul id={'tab'}>
           {
@@ -51,6 +51,7 @@ export default class HomeTab extends Component {
                 contentClass={this.contentClass}
                 key={index}
                 index={index}
+                current = {this.state.current}
                 item={item}
               />
             ))

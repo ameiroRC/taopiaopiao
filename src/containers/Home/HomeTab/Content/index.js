@@ -8,7 +8,7 @@ export default class Content extends Component {
     render() {
         return (
             <div className={this.props.contentClass(this.props.index)}>
-                {this.props.item}
+                {this.props.index===this.props.current?this.props.item:null}
             </div>
         )
     }
