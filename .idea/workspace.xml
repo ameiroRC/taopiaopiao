@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7852eed4-b868-4451-bb3f-1897cc6558a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/mock/cinemas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/mock/comments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/mock/comments.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/mock/seat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/mock/seat.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/mock/users.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api.txt" afterPath="$PROJECT_DIR$/server/api.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/mock/movieList.js" afterPath="$PROJECT_DIR$/server/mock/movieList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/mock/movieList.json" afterPath="$PROJECT_DIR$/server/mock/movieList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/mock/seat.json" afterPath="$PROJECT_DIR$/server/mock/seat.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,8 +21,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="189" column="30" lean-forward="true" selection-start-line="189" selection-start-column="30" selection-end-line="189" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -47,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seat.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="seat.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/mock/seat.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+              <caret line="0" column="58" lean-forward="false" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -77,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="users.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/mock/users.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="65" lean-forward="false" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
+              <caret line="0" column="72" lean-forward="false" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -90,8 +81,8 @@
       <file leaf-file-name="movieList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/mock/movieList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="635" selection-end-column="6" />
+            <state relative-caret-position="180">
+              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -100,8 +91,8 @@
       <file leaf-file-name="comments.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/mock/comments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9855">
-              <caret line="657" column="1" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="657" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -195,7 +186,6 @@
         <option value="$PROJECT_DIR$/server/1.json" />
         <option value="$PROJECT_DIR$/server/mock/tsconfig.json" />
         <option value="$PROJECT_DIR$/server/test.js" />
-        <option value="$PROJECT_DIR$/server/mock/users.json" />
         <option value="$PROJECT_DIR$/server/mock/comments.js" />
         <option value="$PROJECT_DIR$/server/mock/comments.json" />
         <option value="$PROJECT_DIR$/server/mock/movieList.js" />
@@ -203,8 +193,9 @@
         <option value="$PROJECT_DIR$/server/mock/seat.js" />
         <option value="$PROJECT_DIR$/server/mock/movieList.json" />
         <option value="$PROJECT_DIR$/server/api.txt" />
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/mock/seat.json" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/mock/users.json" />
       </list>
     </option>
   </component>
@@ -380,12 +371,12 @@
       <workItem from="1513735108891" duration="3997000" />
       <workItem from="1513774524770" duration="2000" />
       <workItem from="1513774568135" duration="16000" />
-      <workItem from="1513828003029" duration="24443000" />
+      <workItem from="1513828003029" duration="26757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87018000" />
+    <option name="totallyTimeSpent" value="89332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="25" width="1280" height="734" extended-state="0" />
@@ -690,22 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/mock/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="65" lean-forward="false" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/mock/comments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9855">
-          <caret line="657" column="1" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="657" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/mock/comments.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -730,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/mock/movieList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="635" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/mock/movieList.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -754,18 +721,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
+    <entry file="file://$PROJECT_DIR$/server/mock/seat.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="58" lean-forward="false" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/mock/seat.json">
+    <entry file="file://$PROJECT_DIR$/server/mock/comments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/mock/movieList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="189" column="30" lean-forward="true" selection-start-line="189" selection-start-column="30" selection-end-line="189" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/mock/users.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+          <caret line="0" column="72" lean-forward="false" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
           <folding />
         </state>
       </provider>

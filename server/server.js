@@ -176,16 +176,38 @@ app.post('/api/addComment', function (req, res) {
 //座位信息
 
 app.get('/api/seat', function (req, res) {
-    let {id} = req.query;
+    let user = req.session.user;
+    if(!user) return res.json('用户未登录');
+    if(!user.tickets) user.tickets = [];
+    if(!user.seatNumber) user.seatNumber = [];
+    let {id, seat} = req.query;
     fs.readFile('./mock/seat.json', 'utf-8', (err, data) => {
         data = JSON.parse(data);
-        data[id] = true;
+        data[seat] = true;
         fs.writeFile('./mock/seat.json', JSON.stringify(data), () => {
-            res.send("购票成功");
+            let movie = movieList[id];
+            user.tickets.push(movie);
+            console.log(seat);
+            user.seatNumber.push(seat);
+            console.log(user.seatNumber);
+            fs.readFile('./mock/users.json', 'utf-8', (err, data) => {
+                let users = JSON.parse(data);
+                console.log(users);
+                let newUser = users.find(item => {
+                    return item.username == user.username;
+                });
+                newUser.tickets = user.tickets;
+                newUser.seatNumber = user.seatNumber;
+                fs.writeFile('./mock/users.json', JSON.stringify(users), ()=>{
+                    res.send("购票成功");
+                })
+            })
+
         })
 
     })
 });
+
 //注册
 app.post('/api/reg',function(req,res){
     console.log(req.url);
