@@ -36,7 +36,12 @@ app.get('/api/sliders', function (req, res) {
     res.json(sliders);
 });
 //获取首页轮播图列表
-let movieList = require('./mock/movieList');
+let movieList = '';
+fs.readFile('/mock/movieList.json', 'utf-8', (err, data) => {
+   if((!err) && data.length > 0){
+       movieList = JSON.parse(data);
+   }
+});
 function getShowList(showing, offset, limit) {
     let newMovies = movieList.filter((item, index) => {
         return item.isShow === showing;
@@ -97,7 +102,7 @@ app.get('/api/like', function (req, res) {
 
         let user = req.session.user;
 
-        if(!user) res.json('用户未登录');
+        if(!user) return res.json('用户未登录');
         if(!user.likes) user.likes = [];
         if(err||data.length <= 0) {
             res.send([]);
@@ -133,7 +138,7 @@ app.get('/api/like', function (req, res) {
                 }
                 fs.writeFile("./mock/users.json",JSON.stringify(users), () => {
                     fs.writeFile("./mock/movieList.json",JSON.stringify(movies), () => {
-                        res.json({userLikes : oldUser.likes.length});
+                        res.json({code : 0});
                     });
                 });
 
@@ -174,25 +179,35 @@ app.post('/api/addComment', function (req, res) {
     })
 });
 //座位信息
-
-app.get('/api/seat', function (req, res) {
+//seat数组
+app.post('/api/seat', function (req, res) {
     let user = req.session.user;
     if(!user) return res.json('用户未登录');
     if(!user.tickets) user.tickets = [];
     if(!user.seatNumber) user.seatNumber = [];
-    let {id, seat} = req.query;
+    let {id, seat} = req.body;
+    id = parseInt(id);
+
     fs.readFile('./mock/seat.json', 'utf-8', (err, data) => {
-        data = JSON.parse(data);
-        data[seat] = true;
-        fs.writeFile('./mock/seat.json', JSON.stringify(data), () => {
+        let seats = JSON.parse(data);
+        seats[id] = [];
+        seat = JSON.parse(seat);
+
+        seat.forEach(item => {
+            item = parseInt(item);
+
+            seats[id][item] = true;
+        });
+
+        fs.writeFile('./mock/seat.json', JSON.stringify(seats), () => {
             let movie = movieList[id];
             user.tickets.push(movie);
-            console.log(seat);
-            user.seatNumber.push(seat);
-            console.log(user.seatNumber);
+
+            user.seatNumber = [...user.seatNumber, ...seat];
+
             fs.readFile('./mock/users.json', 'utf-8', (err, data) => {
                 let users = JSON.parse(data);
-                console.log(users);
+
                 let newUser = users.find(item => {
                     return item.username == user.username;
                 });
@@ -245,7 +260,7 @@ app.post('/api/login', function (req, res) {
        });
        if(user){
            req.session.user = user;
-           res.json({code:0,success:user,user});
+           res.json({code:0,success:'登陆成功',user});
        }else{
            res.json({code:1,error:'用户名或密码错误'});
        }
@@ -257,6 +272,13 @@ app.get('/api/logout', function(req,res){
     res.json({code:0,success:'已退出登录'});
 });
 
+app.get('/api/validate',function(req,res){
+    if(req.session.user){
+        res.json({code:0,user:req.session.user});
+    }else{
+        res.json({code:1,error:'此用户未登录'});
+    }
+});
 
 //获取排行榜数据
 let rankList = require('./mock/rankList');
