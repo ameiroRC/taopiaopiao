@@ -36,8 +36,9 @@ app.get('/api/sliders', function (req, res) {
     res.json(sliders);
 });
 //获取首页轮播图列表
+
 let movieList = '';
-fs.readFile('/mock/movieList.json', 'utf-8', (err, data) => {
+fs.readFile('./mock/movieList.json', 'utf-8', (err, data) => {
    if((!err) && data.length > 0){
        movieList = JSON.parse(data);
    }
@@ -78,20 +79,25 @@ app.get('/api/movieList', function(req, res){
 });
 //获取影院
 let cinemas = require('./mock/cinemas');
-
 app.get('/api/cinemas', function (req, res) {
 
     let {id} = req.query;
+
+
     if(isNaN(parseInt(id))){
+
+
         res.json(cinemas);
     }else{
-        cinemas = cinemas.filter((item) => {
+        console.log("+++");
+        let tempCinemas = cinemas.filter((item) => {
 
-            return item.id.find((item) => {
+            let number = item.id.find((item) => {
                 return item == id;
             });
+            return !isNaN(number);
         });
-        res.json(cinemas);
+        res.json(tempCinemas);
     }
 });
 
@@ -179,7 +185,7 @@ app.post('/api/addComment', function (req, res) {
     })
 });
 //座位信息
-//seat数组
+//id(当前电影id) seat数组
 app.post('/api/seat', function (req, res) {
     let user = req.session.user;
     if(!user) return res.json('用户未登录');
@@ -190,7 +196,8 @@ app.post('/api/seat', function (req, res) {
 
     fs.readFile('./mock/seat.json', 'utf-8', (err, data) => {
         let seats = JSON.parse(data);
-        seats[id] = [];
+        if(!seats[id]) seats[id] = [];
+
         seat = JSON.parse(seat);
 
         seat.forEach(item => {
@@ -201,9 +208,15 @@ app.post('/api/seat', function (req, res) {
 
         fs.writeFile('./mock/seat.json', JSON.stringify(seats), () => {
             let movie = movieList[id];
-            user.tickets.push(movie);
+            let tempUser = user.tickets.find(item => {
+                return item.id == movie.id
+            });
+            if(typeof tempUser !== 'object') user.tickets.push(movie);
 
-            user.seatNumber = [...user.seatNumber, ...seat];
+            if(!user.seatNumber[id]) user.seatNumber[id] = [];
+
+
+            user.seatNumber[id] = [...user.seatNumber[id], ...seats[id]];
 
             fs.readFile('./mock/users.json', 'utf-8', (err, data) => {
                 let users = JSON.parse(data);
@@ -212,7 +225,7 @@ app.post('/api/seat', function (req, res) {
                     return item.username == user.username;
                 });
                 newUser.tickets = user.tickets;
-                newUser.seatNumber = user.seatNumber;
+                newUser.seatNumber = seats;
                 fs.writeFile('./mock/users.json', JSON.stringify(users), ()=>{
                     res.send("购票成功");
                 })
@@ -247,7 +260,19 @@ app.post('/api/reg',function(req,res){
 
 });
 
-
+//获取用户信息
+app.get('/api/userLikes', function (req, res) {
+    let user = req.session.user;
+    if(!user) return res.json('用户未登录');
+    fs.readFile('./mock/users.json', 'utf-8', (err, data) => {
+        let users = JSON.parse(data);
+        let nowUser = users.find((item) => {
+            return item.username == user.username;
+        });
+        req.session.user = nowUser;
+        res.json(nowUser);
+    })
+});
 
 
 //登录
