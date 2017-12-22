@@ -1,0 +1,18 @@
+.alert {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: lightgrey;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.alert.default {
+  color: black;
+}
+.alert.success {
+  color: green;
+}
+.alert.error {
+  color: red;
+}

@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
 import './index.less'
 import {Link} from 'react-router-dom';
-
-export default class Mine extends Component {
+import {connect} from 'react-redux';
+import actions from '../../store/actions/session';
+class Mine extends Component {
+    handleLogout = ()=>{
+        this.props.logout();
+    }
     render() {
         return (
             <div className="profile">
                 <div className="profile-bg">
                     <img src={require('../../images/profile.png')}/>
                     <div>
-                         <Link to="/login">立即登录</Link>
+                        {
+                          this.props.user?<p>{this.props.user.username}</p>:<Link to="/login">立即登录</Link>
+                        }
                     </div>
                 </div>
                 <ul className="list-crow">
@@ -53,8 +59,14 @@ export default class Mine extends Component {
                         <i>1</i>
                     </li>
                 </ul>
-                <div className="breakOut">退出</div>
+                {
+                    this.props.user&&<div onClick={this.handleLogout} className="breakOut">退出</div>
+                }
             </div>
         )
     }
 }
+export default connect(
+    state => state.session,
+    actions
+)(Mine);

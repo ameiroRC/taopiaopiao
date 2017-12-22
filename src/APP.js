@@ -14,8 +14,8 @@ import City from './containers/City';//城市变更页面
 import Hot from './containers/Home/Hot';//热映页面
 import Will from './containers/Home/Will';//即将上映页面
 import Rank from './containers/Home/Rank';//排行榜页面
-import Login from "./containers/Login/index";
-import Reg from "./containers/Reg/index";
+import Login from "./containers/Login/index";//登录页面
+import Reg from "./containers/Reg/index";//注册页面
 export default class APP extends Component {
   render() {
     return (

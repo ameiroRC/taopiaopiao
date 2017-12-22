@@ -1,0 +1,79 @@
+.profile .profile-bg {
+  background-color: #f46277;
+  background-size: contain;
+  width: 100%;
+  height: 223px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile .profile-bg img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+.profile .profile-bg div {
+  color: #f5f5f5;
+  width: 65px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 16px;
+}
+.profile .list-crow {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  border-top: 2px solid #d5d5d5;
+  z-index: 999;
+  background-color: #fff;
+}
+.profile .list-crow li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+}
+.profile .list-crow li i.iconfont {
+  font-size: 25px;
+}
+.profile .list-crow li.active {
+  color: #f46277;
+}
+.profile .list-crow span {
+  font-size: 12px;
+}
+.profile .list-row {
+  width: 100%;
+  margin-top: 10px;
+}
+.profile .list-row li {
+  height: 50px;
+  border-top: 1px solid #d5d5d5;
+}
+.profile .list-row li span {
+  display: inline;
+  margin-left: 20px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+.profile .list-row li i {
+  margin-right: 20px;
+  height: 50px;
+  line-height: 50px;
+  display: inline;
+  float: right;
+}
+.profile .breakOut {
+  background-color: #f46277;
+  color: #f5f5f5;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin: 16px auto 0;
+}
