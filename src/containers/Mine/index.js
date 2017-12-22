@@ -7,6 +7,7 @@ class Mine extends Component {
     handleLogout = ()=>{
         this.props.logout();
     }
+
     render() {
         return (
             <div className="profile">
@@ -14,15 +15,17 @@ class Mine extends Component {
                     <img src={require('../../images/profile.png')}/>
                     <div>
                         {
-                          this.props.user?<p>{this.props.user.username}</p>:<Link to="/login">立即登录</Link>
+                            this.props.user?<p>{this.props.user.username}</p>:<Link to="/login">立即登录</Link>
                         }
                     </div>
                 </div>
                 <ul className="list-crow">
 
                     <li>
+
                         <i className={'iconfont icon-dianying'}/>
                         <span>电影票</span>
+
                     </li>
                     <li>
                         <i className={'iconfont icon-dianying'}/>
@@ -39,24 +42,36 @@ class Mine extends Component {
                 </ul>
                 <ul className="list-row">
                     <li>
-                       <span>想看的电影</span>
-                        <i>1</i>
+                        <Link to="/likelist">
+                            <span>想看的电影</span>
+                            <i>
+                                >
+                            </i>
+                        </Link>
                     </li>
                     <li>
-                        <span>想看的电影</span>
-                        <i>1</i>
+                        <Link to="/likelist">
+                            <span>想看的电影</span>
+                            <i>></i>
+                        </Link>
                     </li>
                     <li>
-                        <span>想看的电影</span>
-                        <i>1</i>
+                        <Link to="/likelist">
+                            <span>想看的电影</span>
+                            <i>></i>
+                        </Link>
                     </li>
                     <li>
-                        <span>想看的电影</span>
-                        <i>1</i>
+                        <Link to="/likelist">
+                            <span>想看的电影</span>
+                            <i>></i>
+                        </Link>
                     </li>
                     <li>
-                        <span>想看的电影</span>
-                        <i>1</i>
+                        <Link to="/likelist">
+                            <span>想看的电影</span>
+                            <i>></i>
+                        </Link>
                     </li>
                 </ul>
                 {

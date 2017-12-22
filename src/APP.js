@@ -16,6 +16,8 @@ import Will from './containers/Home/Will';//即将上映页面
 import Rank from './containers/Home/Rank';//排行榜页面
 import Login from "./containers/Login/index";//登录页面
 import Reg from "./containers/Reg/index";//注册页面
+import LikeList from './containers/likeList/likeList';
+import CinemaId from './containers/CinemaId/index';
 
 import {ConnectedRouter} from 'react-router-redux';
 import createHashHistory from 'history/createHashHistory';
@@ -33,13 +35,15 @@ export default class APP extends Component {
           <Route path={'/login'} component={Login}/>
           <Route path={'/reg'} component={Reg}/>
           <Route path={'/cinemaDetail'} component={CinemaDetail}/>
-          <Route path={'/filmDetail'} component={FilmDetail}/>
+          <Route path={'/detail/:id'} component={FilmDetail}/>
           <Route path={'/sell'} component={Sell}/>
           <Route path={'/search'} component={Search}/>
           <Route path={'/city'} component={City}/>
           <Route path={'/home/hot'} component={Hot}/>
           <Route path={'/home/will'} component={Will}/>
           <Route path={'/home/Rank'} component={Rank}/>
+          <Route path={'/likelist'} component={LikeList}/>
+          <Route path={'/cinemaId'} component={CinemaId}/>
           <Tab/>
         </div>
       </ConnectedRouter>

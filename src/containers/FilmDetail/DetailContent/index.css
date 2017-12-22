@@ -1,0 +1,46 @@
+.Move-text {
+  width: 90%;
+  margin: 0 5%;
+  font-size: 16px;
+}
+.Move-text .movie-score .movie-score-number {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Move-text .movie-score .movie-score-number .movie-score-item {
+  margin: 0 15px;
+}
+.Move-text .movie-score .movie-score-type {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Move-text .movie-score .movie-score-type .movie-score-type-item {
+  margin: 0 15px ;
+  font-size: 13.75px;
+  color: #777;
+  opacity: 0.7;
+}
+.Move-text .Movie-plot-row {
+  background: #fff;
+  width: 100%;
+  padding-top: 18.75px;
+  border-bottom: 0!important;
+}
+.Move-text .Movie-plot-row .Movie-plot {
+  text-align: justify;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 18.75px;
+  color: #333;
+  overflow: hidden;
+  margin-left: 16px;
+  margin-right: 16px;
+}

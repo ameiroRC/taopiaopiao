@@ -1,0 +1,43 @@
+.ads-row h2 {
+  margin-left: 15px;
+  font-size: 25px;
+}
+.ads-row .ads-box {
+  width: 90%;
+  height: 200px;
+  margin: 10px 5%;
+  position: relative;
+}
+.ads-row .ads-box .abs-banner {
+  width: 100%;
+  height: 100%;
+}
+.ads-row .ads-box b {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+.ads-row .ads-box .line {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  font-weight: 400;
+}
+.ads-row .ads-box p {
+  font-size: 16px;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+}
+.ads-row .ads-box .btn {
+  width: 100px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background-color: crimson;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+}

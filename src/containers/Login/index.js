@@ -15,7 +15,6 @@ import Alert from "../../components/Alert/index";
          let username = this.username.value;
          let password = this.password.value;
          this.props.login({username,password});
-         this.props.history.goBack();
      };
   render() {
     return (

@@ -1,0 +1,57 @@
+.WillFilm{
+  border-top: 1px solid #ccc;
+  margin: 0 20px;
+  padding: 10px 0 15px;
+  overflow: hidden;
+  .WillFilm-content{
+    margin-top: 10px;
+    position: relative;
+    img{
+      width: 100px;
+      height: 130px;
+      float: left;
+    }
+    .rightContent{
+      width: 254px;
+      float: left;
+      margin-left: 20px;
+      line-height: 30px;
+      position: relative;
+      color: black;
+      h5{
+        font-size: 20px;
+      }
+      p{
+        font-size: 16px;
+        span{
+          color: orangered;
+        }
+      }
+    }
+    .WillFilm-btn{
+      position: absolute;
+      right: 0;
+      top: 38px;
+      font-size: 14px;
+      width: 50px;
+      height: 30px;
+      line-height: 30px;
+      background: linear-gradient(45deg,#00d2ff,#3a7bd5);
+      border-radius: 30px;
+      text-align: center;
+      color: white;
+      &.WillFilm-want{
+        background: linear-gradient(45deg,#f46b45,#eea849);
+      }
+    }
+  }
+}
+.WillFilm-loading{
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  span{
+    color: red;
+  }
+}

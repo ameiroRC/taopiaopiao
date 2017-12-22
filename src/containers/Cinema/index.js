@@ -1,11 +1,21 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import actions from '../../store/actions/cinema';
+import CinemaItems from "./CinemaItems/index";
 
-export default class Cinema extends Component {
+class Cinema extends Component {
+    componentDidMount(){
+        this.props.getCinema();
+    }
     render() {
         return (
             <div>
-                Cinema
+                <CinemaItems cinemas={this.props.cinemas}/>
             </div>
         )
     }
 }
+export default connect(
+    state=>state.cinemas,
+    actions
+)(Cinema);

@@ -26,6 +26,7 @@ export default {
                     type:types.LOGIN,
                     payload:{success,error,user}
                 });
+                dispatch(push('/mine'));
             })
         }
     },

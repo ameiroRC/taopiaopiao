@@ -1,0 +1,121 @@
+服务器端口8090
+
+轮播图api  get请求   /api/sliders
+    成功获取返回
+    [
+        "http://gw.alicdn.com/tfs/TB1XPJLi9_I8KJjy0FoXXaFnVXa-1280-520.jpg_720x720Q30.jpg",
+        "http://gw.alicdn.com/tfs/TB1Q6zOh8TH8KJjy0FiXXcRsXXa-1280-520.jpg_720x720Q30.jpg",
+        "http://gw.alicdn.com/tfs/TB1wKcuiLDH8KJjy1XcXXcpdXXa-1280-520.jpg_720x720Q30.jpg",
+        "http://gw.alicdn.com/tfs/TB1McNdiBTH8KJjy0FiXXcRsXXa-1280-520.jpg_720x720Q30.jpg",
+        "http://gw.alicdn.com/tfs/TB1UUGqib_I8KJjy1XaXXbsxpXa-1280-520.jpg_720x720Q30.jpg"
+    ]
+
+
+电影列表(热映中、未上映)api get请求  /api/movieList
+
+    参数showing（请求上映或未上映的电影列表）0请求热映中（胡瀚使用） 1请求未上映（天昊使用）不传返回所有影片默认值为-1
+    offset（起始位置，默认0）
+    limit（获取个数，默认5）
+
+    字段说明
+    is3D -> 是否3D电影
+    isShow -> 是否上映
+    grade -> 评分  未上映电影值为0
+    like -> 想看人数 上映中电影值为0
+    todayPrice -> 今日票房 未上映值为0
+
+
+    注 ：各界面影片id对应首页所有影片id，为到时获取影片详情信息使用，所以其余界面的id是无序的，目的只为对应首页电影列表id
+    （首页列表数据日后可能会变动，还需加入一部分详情页所需内容，但获取方式不会改变，不会影响首页内容显示）
+
+    上映中   成功返回->
+    {
+        "hasMore":true,
+         "list":[
+            {
+                "id":0,"img":"https://gw.alicdn.com/i3/TB12V0Iiv6H8KJjSspmXXb2WXXa_.jpg_160x160Q75.jpg",
+                "video":"http://vodcdn.video.taobao.com/oss/taobao-ugc/190d24aad9cc494ea17f3d4bda8c8502/1505302783/video.mp4",
+                "title":"芳华",
+                "is3D":false,
+                "isShow":true,
+                "grade":8.9,
+                "like":0,
+                "todayPrice" : 3254.77,
+                "releaseTime":"已上映",
+                "director":"导演：冯小刚",
+                "starring":"主演：黄轩 苗苗 钟楚曦 杨采钰"},
+                ]
+    }
+
+    未上映 成功返回->
+    {
+        "hasMore":true,
+        "list":[
+            {
+                "id":3,"img":"https://gw.alicdn.com/i1/TB1GNNGiDnI8KJjSszgXXc8ApXa_.jpg_160x160Q75.jpg",
+                "video":"http://vodcdn.video.taobao.com/oss/taobao-ugc/612df43174984b5cbd59e414ee35ee7e/1513248916/video.mp4",
+                "title":"机器之血",
+                "is3D":true,
+                "isShow":false,
+                "grade":0,
+                "like":197101,
+                "todayPrice" : 0,
+                "releaseTime":"12月22日上映",
+                "director":"导演：张立嘉",
+                "starring":"主演：成龙 罗志祥 欧阳娜娜"
+            }
+                ]
+    }
+
+
+想看按钮api get /api/like  参数id
+    第一次点击想看数量加1 并将此电影添加到个人想看中  第二次减一 并从个人想看中删除
+    返回{
+            userLikes : 对应的想看的电影个数
+        }
+
+获取评论 api get /api/comment 参数id(当前电影id)
+    成功返回 [
+        [
+            {
+                username : ...,
+                content : ...
+            },
+            {
+                username : ...,
+                content : ...
+            },
+            ...
+        ]
+    ]
+添加评论 api post /api/addComment 参数id(当前电影id)  content(评论内容)
+    成功返回 评论成功
+获取影院信息 api get /api/cinemas 参数id（当前电影id） 不传返回所有影院
+    成功返回 [
+                {
+                    cinema: '刁建东裸奔大剧院',
+                    location: '珠峰培 : 这里有刁建东和他的叔叔们',
+                    id: [ 1, 2, 3, 5, 7, 9, 25, 26, 28 ]
+                },
+                {
+                    cinema: '博纳国际影城(悠唐店)',
+                    location: '北京东 ：好片上映时这里的电影票经常会一早售罄',
+                    id: [ 1, 2, 4, 6, 8, 10, 23, 22, 21, 20 ]
+                },
+                ....
+            ]
+
+获取座位信息 api /api/seat 参数id(第几个座位)
+成功返回 购票成功
+
+注册 api post   /api/reg  参数username password
+    成功返回 {code : 0, error : '注册成功'}
+    失败返回 {code : 1, error : '用户名已存在'}
+
+登录 api post  /api/login  参数username password   (session.secret = 'lcy')
+
+    成功返回 {code:0,success:user,user}
+    失败返回 {code:1,error:'用户名或密码错误'}
+
+退出登录 api get  /api/logout
+    成功返回 {code:0,success:'已退出登录'}

@@ -12,7 +12,7 @@ export default class HomeTab extends Component {
     this.state = {
       title: ["正在热映", "即将上映", "排行榜"],
       content: [<Hot/>, <Will/>, <Rank/>],
-      current: 1
+      current: 0
     }
   }
 
