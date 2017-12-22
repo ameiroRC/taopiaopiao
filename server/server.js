@@ -184,7 +184,18 @@ app.post('/api/addComment', function (req, res) {
         })
     })
 });
-//座位信息
+//获取座位信息
+app.get('/api/getSeats', function (req, res) {
+    let {id} = req.query;
+    id = parseInt(id);
+    if(!id) return res.send('获取失败');
+    fs.readFile('./mock/seat.json', 'utf-8', (err, data) => {
+        let seats = JSON.parse(data);
+        if(!seats[id]) seats[id] = [];
+        res.json(seats[id]);
+    })
+});
+//购票
 //id(当前电影id) seat数组
 app.post('/api/seat', function (req, res) {
     let user = req.session.user;
@@ -227,7 +238,7 @@ app.post('/api/seat', function (req, res) {
                 newUser.tickets = user.tickets;
                 newUser.seatNumber = seats;
                 fs.writeFile('./mock/users.json', JSON.stringify(users), ()=>{
-                    res.send("购票成功");
+                    res.send('购票成功');
                 })
             })
 
@@ -238,15 +249,14 @@ app.post('/api/seat', function (req, res) {
 
 //注册
 app.post('/api/reg',function(req,res){
-    console.log(req.url);
-    console.log(req.body);
+
     fs.readFile('./mock/users.json', 'utf-8' ,(err, data)=>{
 
         let users = JSON.parse(data);
-        console.log(users);
+
 
         let user = users.find(item => item.username == req.body.username);
-        console.log(user);
+
         if(user){
             res.json({code : 1, error : '用户名已存在'});
         }else{

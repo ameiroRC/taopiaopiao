@@ -104,8 +104,23 @@
                 },
                 ....
             ]
-
-获取座位信息 api /api/seat 参数id(第几个座位)
+获取座位 api  get /api/getSeats 参数id（电影）
+成功返回 [
+         null,
+         true,
+         true,
+         true,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         true,
+         true,
+         true
+     ]
+购票确认信息 api  post   /api/seat 参数id(电影)  seat(座位数组)
 成功返回 购票成功
 
 注册 api post   /api/reg  参数username password

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7852eed4-b868-4451-bb3f-1897cc6558a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/mock/movieList.json" afterPath="$PROJECT_DIR$/server/mock/movieList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api.txt" afterPath="$PROJECT_DIR$/server/api.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/mock/seat.json" afterPath="$PROJECT_DIR$/server/mock/seat.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/mock/users.json" afterPath="$PROJECT_DIR$/server/mock/users.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+            <state relative-caret-position="412">
+              <caret line="242" column="14" lean-forward="true" selection-start-line="242" selection-start-column="14" selection-end-line="242" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -45,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/server/mock/seat.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="27" />
+              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -54,8 +54,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/api.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+            <state relative-caret-position="367">
+              <caret line="111" column="14" lean-forward="true" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -194,11 +194,11 @@
         <option value="$PROJECT_DIR$/server/mock/cinemas.js" />
         <option value="$PROJECT_DIR$/server/mock/seat.js" />
         <option value="$PROJECT_DIR$/server/mock/movieList.json" />
-        <option value="$PROJECT_DIR$/server/api.txt" />
-        <option value="$PROJECT_DIR$/server/mock/seat.json" />
         <option value="$PROJECT_DIR$/server/mock/users.json" />
         <option value="$PROJECT_DIR$/server/test.js" />
+        <option value="$PROJECT_DIR$/server/mock/seat.json" />
         <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/api.txt" />
       </list>
     </option>
   </component>
@@ -374,12 +374,12 @@
       <workItem from="1513735108891" duration="3997000" />
       <workItem from="1513774524770" duration="2000" />
       <workItem from="1513774568135" duration="16000" />
-      <workItem from="1513828003029" duration="36004000" />
+      <workItem from="1513828003029" duration="37563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98579000" />
+    <option name="totallyTimeSpent" value="100138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="25" width="1280" height="734" extended-state="0" />
@@ -716,10 +716,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/api.txt">
+    <entry file="file://$PROJECT_DIR$/server/mock/seat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+        <state relative-caret-position="499">
+          <caret line="65" column="1" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="65" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -732,10 +732,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/mock/seat.js">
+    <entry file="file://$PROJECT_DIR$/server/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="65" column="1" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="65" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -743,23 +743,23 @@
     <entry file="file://$PROJECT_DIR$/server/mock/seat.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+        <state relative-caret-position="412">
+          <caret line="242" column="14" lean-forward="true" selection-start-line="242" selection-start-column="14" selection-end-line="242" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="111" column="14" lean-forward="true" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
           <folding />
         </state>
       </provider>

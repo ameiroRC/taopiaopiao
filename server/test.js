@@ -1,5 +1,4 @@
-let ary = [1, 2];
-console.log(ary.find( (item) => {
-    return item == 2;
-}));
+let ary = [];
+ary[1] =1;
+console.log(ary);
 
