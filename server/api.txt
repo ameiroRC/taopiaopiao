@@ -69,20 +69,53 @@
 
 
 想看按钮api get /api/like  参数id
-    第一次点击想看数量加1 第二次减一
+    第一次点击想看数量加1 并将此电影添加到个人想看中  第二次减一 并从个人想看中删除
     返回{
-            "id":0,"img":"https://gw.alicdn.com/i3/TB12V0Iiv6H8KJjSspmXXb2WXXa_.jpg_160x160Q75.jpg",
-            "video":"http://vodcdn.video.taobao.com/oss/taobao-ugc/190d24aad9cc494ea17f3d4bda8c8502/1505302783/video.mp4",
-            "title":"芳华",
-            "is3D":false,
-            "isShow":true,
-            "grade":8.9,
-            "like":0,
-            "todayPrice":3254.77,
-            "releaseTime":"已上映",
-            "director":"导演：冯小刚",
-            "starring":"主演：黄轩 苗苗 钟楚曦 杨采钰",
-            "isChange":false
+            userLikes : 对应的想看的电影个数
         }
 
+获取评论 api get /api/comment 参数id(当前电影id)
+    成功返回 [
+        [
+            {
+                username : ...,
+                content : ...
+            },
+            {
+                username : ...,
+                content : ...
+            },
+            ...
+        ]
+    ]
+添加评论 api post /api/addComment 参数id(当前电影id)  content(评论内容)
+    成功返回 评论成功
+获取影院信息 api get /api/cinemas 参数id（当前电影id） 不传返回所有影院
+    成功返回 [
+                {
+                    cinema: '刁建东裸奔大剧院',
+                    location: '珠峰培 : 这里有刁建东和他的叔叔们',
+                    id: [ 1, 2, 3, 5, 7, 9, 25, 26, 28 ]
+                },
+                {
+                    cinema: '博纳国际影城(悠唐店)',
+                    location: '北京东 ：好片上映时这里的电影票经常会一早售罄',
+                    id: [ 1, 2, 4, 6, 8, 10, 23, 22, 21, 20 ]
+                },
+                ....
+            ]
 
+获取座位信息 api /api/seat 参数id(第几个座位)
+成功返回 购票成功
+
+注册 api post   /api/reg  参数username password
+    成功返回 {code : 0, error : '注册成功'}
+    失败返回 {code : 1, error : '用户名已存在'}
+
+登录 api post  /api/login  参数username password   (session.secret = 'lcy')
+
+    成功返回 {code:0,success:user,user}
+    失败返回 {code:1,error:'用户名或密码错误'}
+
+退出登录 api get  /api/logout
+    成功返回 {code:0,success:'已退出登录'}

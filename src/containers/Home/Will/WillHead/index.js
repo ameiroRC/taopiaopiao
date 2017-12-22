@@ -1,5 +1,6 @@
 import './index.less';
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import $ from 'jquery';
 
 export default class WillHead extends Component {
@@ -30,22 +31,22 @@ export default class WillHead extends Component {
                 <div className="WillHead-title">
                     <h4>每月观影指南</h4>
                     <div className="WillHead-month" onClick={this.handleClick}>
-                        <a href="###" className={this.state.month==='January'?'active':''} data-month='January'>1月</a>
-                        <a href="###" className={this.state.month==='February'?'active':''} data-month='February'>2月</a>
-                        <a href="###" className={this.state.month==='March'?'active':''} data-month='March'>3月</a>
+                        <a href="javascript:void(0)" className={this.state.month==='January'?'active':''} data-month='January'>1月</a>
+                        <a href="javascript:void(0)" className={this.state.month==='February'?'active':''} data-month='February'>2月</a>
+                        <a href="javascript:void(0)" className={this.state.month==='March'?'active':''} data-month='March'>3月</a>
                     </div>
                 </div>
                 <div className="WillHead-wrap">
                     <div ref={div=>this.slider=div} className="WillHead-slider" style={style}>
                         {
                             this.props.willHead.list.map((item,index)=>(
-                                <div key={item.id} className="WillHead-product">
+                                <Link to={{pathname:`/detail/${item.id}`,state:item}} key={item.id} className="WillHead-product">
                                     <div className="WillHead-tip">预售</div>
                                     <img src={item.img}/>
                                     <b>{item.like}人想看</b>
                                     <h5>{item.title}</h5>
                                     <p>{item.releaseTime}</p>
-                                </div>
+                                </Link>
                             ))
                         }
                     </div>

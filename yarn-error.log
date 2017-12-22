@@ -22,7 +22,7 @@ npm manifest:
     "scripts": {
       "build": "webpack",
       "dev": "webpack-dev-server --open",
-      "start": "node server/server.js"
+      "start": "node server/server1.js"
     },
     "keywords": [],
     "author": "",

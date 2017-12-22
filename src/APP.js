@@ -14,16 +14,24 @@ import City from './containers/City';//城市变更页面
 import Hot from './containers/Home/Hot';//热映页面
 import Will from './containers/Home/Will';//即将上映页面
 import Rank from './containers/Home/Rank';//排行榜页面
+import Login from "./containers/Login/index";//登录页面
+import Reg from "./containers/Reg/index";//注册页面
 
+import {ConnectedRouter} from 'react-router-redux';
+import createHashHistory from 'history/createHashHistory';
+//这个组件实现了redux仓库和本组件连接
+let history = createHashHistory();
 
 export default class APP extends Component {
   render() {
     return (
-      <Router>
+      <ConnectedRouter  history={history}>
         <div>
           <Route exact path={'/'} component={Home}/>
           <Route path={'/cinema'} component={Cinema}/>
           <Route path={'/mine'} component={Mine}/>
+          <Route path={'/login'} component={Login}/>
+          <Route path={'/reg'} component={Reg}/>
           <Route path={'/cinemaDetail'} component={CinemaDetail}/>
           <Route path={'/filmDetail'} component={FilmDetail}/>
           <Route path={'/sell'} component={Sell}/>
@@ -34,7 +42,7 @@ export default class APP extends Component {
           <Route path={'/home/Rank'} component={Rank}/>
           <Tab/>
         </div>
-      </Router>
+      </ConnectedRouter>
     )
   }
 }

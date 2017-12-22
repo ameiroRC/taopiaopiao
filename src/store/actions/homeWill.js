@@ -1,5 +1,5 @@
 import * as types from '../action-types';
-import {getWill,getSome} from '../../api/homeWill';
+import {getWill,getSome,getLike} from '../../api/homeWill';
 export default {
     getWill(){
         return function (dispatch, getState) {
@@ -20,6 +20,15 @@ export default {
                     payload:getSome(offset,limit)
                 })
             }
+        }
+    },
+    getLike(){
+        return function (dispatch, getState) {
+
+            dispatch({
+                type:types.ISLIKE,
+                payload:getLike()
+            })
         }
     }
 }
