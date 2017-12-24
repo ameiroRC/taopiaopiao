@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './index.less';
+import {Link} from 'react-router-dom'
 export default class CinemaItems extends Component{
     render(){
         return (
@@ -7,11 +8,13 @@ export default class CinemaItems extends Component{
                 <h1>影院</h1>
                 {
                     this.props.cinemas.map((item,index)=>(
-                        <div className="ci-list" key={index}>
+                        <Link
+                            to={{pathname:`/cinemas/${item.id[0]}`,state:item}}
+                            className="ci-list" key={index}>
                             <h3>{item.cinema}</h3>
                             <p>{item.location}</p>
                             <i>{item.price}</i>
-                        </div>
+                        </Link>
                     ))
                 }
             </div>

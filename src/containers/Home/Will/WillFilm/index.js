@@ -41,7 +41,7 @@ class WillFilm extends Component{
                                     <span>{item.starring}</span>
                                 </Link>
                                 {
-                                    index>4?this.props.user?<a src="javascript:void(0)" data-id={item.id} className="WillFilm-btn WillFilm-want" onClick={(e)=>this.wanted(e,item.id)}>想看</a>:<Link to='/login' className="WillFilm-btn WillFilm-want">想看</Link>:<a href="javascript:void(0)" className="WillFilm-btn">预售</a>
+                                    index>4?this.props.user?<a src="javascript:void(0)" data-id={item.id} className="WillFilm-btn WillFilm-want" onClick={(e)=>this.wanted(e,item.id)}>想看</a>:<Link to='/login' className="WillFilm-btn WillFilm-want">想看</Link>:<Link to={{pathname:'/cinemaId',state:item}} href="javascript:void(0)" className="WillFilm-btn">预售</Link>
                                 }
                             </div>
                         </div>

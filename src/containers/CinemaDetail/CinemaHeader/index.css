@@ -1,0 +1,77 @@
+.header {
+  background-color: #fff;
+}
+.header .header-row {
+  display: flex;
+}
+.header .header-row .cinema-link {
+  box-flex: 1;
+  flex: 1;
+  width: 0;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 16.25px 0 0 30px;
+}
+.header .header-row .cinema-link .name {
+  font-size: 20px;
+  line-height: 37.5px;
+  width: auto;
+  color: #222;
+  overflow: hidden;
+}
+.header .header-row .cinema-link .cinema-address {
+  font-size: 16.25px;
+  color: #999;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header .header-row .cinema-link .cinema-tags {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+.header .header-row .cinema-link .cinema-tags .cinema-tag {
+  color: #0ae;
+  background-color: transparent;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  height: 10px;
+  line-height: 10px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 2.5px;
+}
+.header .header-row i {
+  color: darkgrey;
+  width: 43.75px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.header .cinema-banners {
+  display: flex;
+  box-pack: justify;
+  justify-content: space-between;
+  padding: 0 18.75px;
+}
+.header .cinema-banners a {
+  box-ordinal-group: 4;
+  order: 3;
+  background-color: #f3f9fd;
+  color: #65b1db;
+  margin: 6.25px;
+  width: 100%;
+  padding: 1px 22.5px 1px 18.75px;
+  box-flex: 1;
+}
+.header .cinema-banners .div1 {
+  font-size: 17.5px;
+  line-height: 22.5px;
+}
+.header .cinema-banners .div2 {
+  font-size: 12.5px;
+  line-height: 17.5px;
+}

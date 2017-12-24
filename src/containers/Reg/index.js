@@ -41,7 +41,7 @@ class Reg extends Component {
     render() {
         return (
             <div className="reg-panel">
-                <i className="iconfont icon-fanhui" onClick={this.back}>X</i>
+                <i className="iconfont" onClick={this.back}>X</i>
                 <div className="reg-logo">
                     <img src={require('../../images/profile.png')} alt=""/>
                 </div>

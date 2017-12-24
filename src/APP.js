@@ -21,6 +21,7 @@ import CinemaId from './containers/CinemaId/index';
 
 import {ConnectedRouter} from 'react-router-redux';
 import createHashHistory from 'history/createHashHistory';
+import Payment from "./containers/Payment/index";
 //这个组件实现了redux仓库和本组件连接
 let history = createHashHistory();
 
@@ -34,9 +35,9 @@ export default class APP extends Component {
           <Route path={'/mine'} component={Mine}/>
           <Route path={'/login'} component={Login}/>
           <Route path={'/reg'} component={Reg}/>
-          <Route path={'/cinemaDetail'} component={CinemaDetail}/>
+          <Route path={'/cinemas/:id'} component={CinemaDetail}/>
           <Route path={'/detail/:id'} component={FilmDetail}/>
-          <Route path={'/sell'} component={Sell}/>
+          <Route path={'/sell/:id'} component={Sell}/>
           <Route path={'/search'} component={Search}/>
           <Route path={'/city'} component={City}/>
           <Route path={'/home/hot'} component={Hot}/>
@@ -44,6 +45,7 @@ export default class APP extends Component {
           <Route path={'/home/Rank'} component={Rank}/>
           <Route path={'/likelist'} component={LikeList}/>
           <Route path={'/cinemaId'} component={CinemaId}/>
+          <Route  path={'/payment'} component={Payment}/>
           <Tab/>
         </div>
       </ConnectedRouter>

@@ -4,9 +4,9 @@ export default class DetailTab extends Component {
     render() {
         console.log(this.props);
         return (
-            <div>
+            <div id='div1'>
                 <div className="Tab">
-                    <span className='MoveTitle'>你的名字</span>
+
                 </div>
                 <span className='fanhui' onClick={()=>this.props.history.go(-1)}>
                     &lt;</span>

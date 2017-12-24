@@ -19,7 +19,7 @@ import Alert from "../../components/Alert/index";
   render() {
     return (
       <div className="login-panel">
-          <i className="iconfont icon-fanhui" onClick={this.back}>X</i>
+          <i className="iconfont" onClick={this.back}>X</i>
         <div className="login-logo">
           <img src={require('../../images/profile.png')} alt=""/>
         </div>

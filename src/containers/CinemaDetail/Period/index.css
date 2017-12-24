@@ -1,0 +1,174 @@
+#period .tab-wrap {
+  position: relative;
+}
+#period .tab-wrap .sel-date {
+  color: #999;
+  line-height: 55px;
+  overflow: hidden;
+  padding-bottom: 0;
+  background-color: #fff;
+}
+#period .tab-wrap .sel-date ul {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative;
+  bottom: -1px;
+  font-size: 0;
+}
+#period .tab-wrap .sel-date ul li {
+  vertical-align: top;
+  font-size: 16.25px;
+  min-width: 93.75px;
+  margin-right: 12.5px;
+  margin-left: 12.5px;
+  text-align: center;
+  display: inline-block;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  border-bottom-width: 3.75px;
+}
+#period .tab-wrap .sel-date ul li .font-icon {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 3.75px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 2px;
+  font-size: .625rem;
+  text-align: center;
+  background-color: #ff8625;
+}
+#period .tab-wrap .tips {
+  width: 90%;
+  height: 25px;
+  line-height: 25px;
+  border-bottom: 1px solid #999999;
+  display: flex;
+  -webkit-box-align: center;
+  margin-left: 15px;
+}
+#period .tab-wrap .tips .div1 {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 2px;
+  font-size: 12.5px;
+  color: #fff;
+  text-align: center;
+  background-color: #fea54c;
+}
+#period .tab-wrap .tips .div2 {
+  height: 15px;
+  line-height: 15px;
+  font-size: .8125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding-left: 8.75px;
+  padding-right: 8.75px;
+  color: #999;
+  width: auto;
+}
+#period .tab-wrap .tips .div3 {
+  color: #b9b7c5;
+  width: auto;
+  height: 15px;
+  line-height: 15px;
+  font-size: 16.25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#period .tab-wrap .play-date {
+  position: relative;
+  background: #fff;
+  padding: 10px 18.75px 20px 18.75px;
+}
+#period .tab-wrap .play-date .pd {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  display: block;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #999999;
+}
+#period .tab-wrap .play-date .pd .item-clock {
+  width: 27%;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  color: #333;
+  font-weight: 700;
+  font-size: 30px;
+}
+#period .tab-wrap .play-date .pd p .item-type {
+  color: #333;
+  font-size: 15px;
+  padding-right: 5px;
+}
+#period .tab-wrap .play-date .pd p .item-act {
+  color: #fd2c32;
+  font-size: 15px;
+  flex: 1;
+  text-align: right;
+  margin: 0 5px;
+}
+#period .tab-wrap .play-date .pd p .price {
+  flex-shrink: 0;
+  color: #fd2c32;
+  text-align: right;
+  overflow: visible;
+  font-size: 25px;
+  padding-left: 5px;
+}
+#period .tab-wrap .play-date .item-end {
+  width: 27%;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  color: #999;
+  font-size: 15px;
+  vertical-align: bottom;
+}
+#period .tab-wrap .play-date .item-hall {
+  color: #999;
+  font-size: 14px;
+  height: auto;
+  line-height: 22px;
+  margin-right: 77px;
+}
+#period .tab-wrap .play-date .item-pre {
+  flex-shrink: 0;
+  overflow: visible;
+  font-size: 15px;
+  padding-left: 2px;
+  text-align: right;
+  color: #999;
+  text-decoration: line-through;
+}
+#period .tab-wrap .tpp-btn-outline-primary {
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  color: #ff4d64;
+  background-image: none;
+  border: 1px solid #ff4d64;
+  text-align: center;
+  border-radius: 15px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
